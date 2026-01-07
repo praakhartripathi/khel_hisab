@@ -1,14 +1,14 @@
-````md
 # Khel Hisab
 
-Khel Hisab is a simple and easy-to-use volleyball scorecard app built using Flutter.  
-It is mainly designed for village and local matches where keeping score should be quick, offline, and simple.
+Khel Hisab is a simple and easy-to-use volleyball scorecard app built using Flutter. It is mainly designed for village and local matches where keeping score should be quick, offline, and simple.
 
 This repository currently contains the **beta version** of the app.
 
 ---
 
-## Current Features (Beta)
+## Features
+
+### Current Features (Beta)
 
 - Home screen
 - New Match option
@@ -16,9 +16,7 @@ This repository currently contains the **beta version** of the app.
 - Add points with a single tap
 - Works completely offline
 
----
-
-## Not Available Yet
+### Not Available Yet
 
 The following features are planned but **not implemented in this beta version**:
 
@@ -34,7 +32,6 @@ The following features are planned but **not implemented in this beta version**:
 
 - Flutter
 - Dart
-- Android
 
 ---
 
@@ -48,28 +45,22 @@ The following features are planned but **not implemented in this beta version**:
 
 ### Installation
 
-1. Clone the repository
-   ```sh
-   git clone https://github.com/praakhartripathi/khel_hisab.git
-````
-
-2. Go to the project directory
-
-   ```sh
-   cd khel_hisab
-   ```
-
-3. Install dependencies
-
-   ```sh
-   flutter pub get
-   ```
-
-4. Run the app
-
-   ```sh
-   flutter run
-   ```
+1.  Clone the repository
+    ```sh
+    git clone https://github.com/praakhartripathi/khel_hisab.git
+    ```
+2.  Go to the project directory
+    ```sh
+    cd khel_hisab
+    ```
+3.  Install dependencies
+    ```sh
+    flutter pub get
+    ```
+4.  Run the app
+    ```sh
+    flutter run
+    ```
 
 ---
 
@@ -83,41 +74,28 @@ This version is intended only for testing and feedback.
 
 ## Roadmap
 
-* Continue Match
-* Match History
-* Improved UI
-* Tournament support
-* Stable v1.0 release
+- [ ] Continue Match
+- [ ] Match History
+- [ ] Improved UI
+- [ ] Tournament support
+- [ ] Stable v1.0 release
+
+---
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
-
-```
-
----
-
-## Important: Fix Your GitHub “About” Section Too
-
-Your **About** text on the right side should also match the beta.
-
-Recommended **About text**:
-
-```
----
-- Khel Hisab is a simple volleyball scorecard app built with Flutter for village and local matches. This repository contains the beta version with basic New Match functionality.
-
-```
-
----
-
-## Why this matters
-
-- Recruiters and users hate feature mismatch
-- Beta honesty builds trust
-- Your project looks more professional
-- No confusion about missing features
-
-```
+This project is licensed under the MIT License. See `LICENSE` for more information.
