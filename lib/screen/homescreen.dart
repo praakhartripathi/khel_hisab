@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:khel_hisab/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
 
+import 'package:khel_hisab/screen/new_match_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -28,18 +30,28 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(double.infinity, 50),
+              ),
               onPressed: () {
-                // TODO: Implement New Match functionality
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NewMatchScreen()),
+                );
               },
               child: const Text('New Match'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(double.infinity, 50),
+              ),
               onPressed: () {
                 // TODO: Implement Continue Match functionality
               },
@@ -47,6 +59,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(double.infinity, 50),
+              ),
               onPressed: () {
                 // TODO: Implement Match History functionality
               },
@@ -54,6 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(double.infinity, 50),
+              ),
               onPressed: () {
                 // TODO: Implement Settings functionality
               },
