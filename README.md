@@ -1,79 +1,123 @@
+````md
 # Khel Hisab
 
-Khel Hisab (খেলা হিসাব, which means "Game Accounting" in Bengali) is a simple and intuitive scorekeeper app built with Flutter. It helps you keep track of scores for your favorite sports matches, like volleyball, badminton, or table tennis.
+Khel Hisab is a simple and easy-to-use volleyball scorecard app built using Flutter.  
+It is mainly designed for village and local matches where keeping score should be quick, offline, and simple.
 
-## Features
+This repository currently contains the **beta version** of the app.
 
-- **Customizable Matches:** Set up new matches with custom team names, points per set, and the number of sets required to win.
-- **Real-time Scorekeeping:** Easily increment scores for each team with a simple tap.
-- **Automatic Win Detection:** The app automatically detects when a set or the entire match is won based on the rules you've set.
-- **Shareable Scorecards:** Generate and share a PDF of the match scorecard with anyone.
-- **Light & Dark Mode:** Choose between a light or dark theme for comfortable viewing in any environment.
-- **Match Types:** Select between a "Friendly Match" or "Tournament Match".
+---
 
-## Screenshots
+## Current Features (Beta)
 
-*(Coming Soon)*
+- Home screen
+- New Match option
+- Basic volleyball scorecard
+- Add points with a single tap
+- Works completely offline
+
+---
+
+## Not Available Yet
+
+The following features are planned but **not implemented in this beta version**:
+
+- Continue Match
+- Match History
+- Tournament mode
+- Advanced volleyball rules
+- PDF sharing
+
+---
+
+## Tech Stack
+
+- Flutter
+- Dart
+- Android
+
+---
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps.
-
 ### Prerequisites
 
-- [Flutter SDK](https://flutter.dev/docs/get-started/install)
-- An editor like [Android Studio](https://developer.android.com/studio) or [VS Code](https://code.visualstudio.com/) with the Flutter plugin.
+- Flutter SDK
+- Android Studio or VS Code
+- Android device or emulator
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repository
    ```sh
-   git clone https://github.com/your_username/khel_hisab.git
+   git clone https://github.com/praakhartripathi/khel_hisab.git
+````
+
+2. Go to the project directory
+
+   ```sh
+   cd khel_hisab
    ```
-2. Navigate to the project directory
-    ```sh
-    cd khel_hisab
-    ```
+
 3. Install dependencies
+
    ```sh
    flutter pub get
    ```
+
 4. Run the app
-    ```sh
-    flutter run
-    ```
 
-## How to Use
+   ```sh
+   flutter run
+   ```
 
-1. Launch the app and tap on **New Match**.
-2. Enter the names for Team A and Team B.
-3. Define the **Points per Set** and the number of **Sets to Win**.
-4. Choose the **Match Type**.
-5. Tap **▶️ Start Match** to begin.
-6. Use the `+1` button under each team's name to add points.
-7. The app will automatically keep track of the sets won.
-8. Once a team wins the required number of sets, a dialog will announce the winner.
-9. At any point during the match, you can tap the share icon in the app bar to generate and share a PDF scorecard.
+---
 
-## Future Features
+## Beta Release
 
-- [ ] **Continue Match:** Resume a previously saved match.
-- [ ] **Match History:** View a log of all completed matches.
-- [ ] **Settings:** More customization options for the app.
+APK files for testing are available in the **Releases** section of this repository.
 
-## Contributing
+This version is intended only for testing and feedback.
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+---
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+## Roadmap
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+* Continue Match
+* Match History
+* Improved UI
+* Tournament support
+* Stable v1.0 release
+
+---
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the MIT License.
 
+```
+
+---
+
+## Important: Fix Your GitHub “About” Section Too
+
+Your **About** text on the right side should also match the beta.
+
+Recommended **About text**:
+
+```
+---
+- Khel Hisab is a simple volleyball scorecard app built with Flutter for village and local matches. This repository contains the beta version with basic New Match functionality.
+
+```
+
+---
+
+## Why this matters
+
+- Recruiters and users hate feature mismatch
+- Beta honesty builds trust
+- Your project looks more professional
+- No confusion about missing features
+
+```
