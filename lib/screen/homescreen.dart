@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               child: const Text('New Match'),
             ),
-            const SizedBox(height: 100),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 // TODO: Implement Continue Match functionality
