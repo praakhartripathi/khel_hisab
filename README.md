@@ -25,7 +25,6 @@ The following features are planned but **not implemented in this beta version**:
 
 - Tournament mode
 - Advanced volleyball rules
-- PDF sharing
 
 ---
 
