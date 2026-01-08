@@ -6,6 +6,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:khel_hisab/screen/continue_match_screen.dart';
 import 'package:khel_hisab/screen/new_match_screen.dart';
 import 'package:khel_hisab/screen/match_history_screen.dart';
+import 'package:khel_hisab/screen/about_app_screen.dart';
+import 'package:khel_hisab/screen/settings_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -151,9 +153,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 minimumSize: const Size(double.infinity, 50),
               ),
               onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Settings coming soon'),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SettingsScreen(),
                   ),
                 );
               },

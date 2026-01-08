@@ -12,16 +12,17 @@ This repository currently contains the **beta version** of the app.
 
 - Home screen
 - New Match option
+- Continue Match
+- Match History
 - Basic volleyball scorecard
 - Add points with a single tap
+- No editing of old scores
 - Works completely offline
 
 ### Not Available Yet
 
 The following features are planned but **not implemented in this beta version**:
 
-- Continue Match
-- Match History
 - Tournament mode
 - Advanced volleyball rules
 - PDF sharing
@@ -74,8 +75,8 @@ This version is intended only for testing and feedback.
 
 ## Roadmap
 
-- [ ] Continue Match
-- [ ] Match History
+- [x] Continue Match
+- [x] Match History
 - [ ] Improved UI
 - [ ] Tournament support
 - [ ] Stable v1.0 release
