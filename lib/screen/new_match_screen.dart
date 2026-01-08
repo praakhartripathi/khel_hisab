@@ -12,8 +12,8 @@ class NewMatchScreen extends StatefulWidget {
 }
 
 class _NewMatchScreenState extends State<NewMatchScreen> {
-  final _teamAController = TextEditingController(text: 'टीम A');
-  final _teamBController = TextEditingController(text: 'टीम B');
+  final _teamAController = TextEditingController(text: 'Team A');
+  final _teamBController = TextEditingController(text: 'Team B');
   final _pointsPerSetController = TextEditingController(text: '10');
   final _setsToWinController = TextEditingController(text: '5');
   final _formKey = GlobalKey<FormState>();
@@ -44,10 +44,10 @@ class _NewMatchScreenState extends State<NewMatchScreen> {
               children: [
                 TextFormField(
                   controller: _teamAController,
-                  decoration: const InputDecoration(labelText: 'Team A Name'),
+                  decoration: const InputDecoration(labelText: 'first team name'),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please enter Team A name';
+                      return 'Please enter the first team name';
                     }
                     return null;
                   },
@@ -55,10 +55,10 @@ class _NewMatchScreenState extends State<NewMatchScreen> {
                 const SizedBox(height: 20),
                 TextFormField(
                   controller: _teamBController,
-                  decoration: const InputDecoration(labelText: 'Team B Name'),
+                  decoration: const InputDecoration(labelText: 'second team nam'),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Please enter Team B name';
+                      return 'Please enter the second team name';
                     }
                     return null;
                   },
@@ -66,7 +66,7 @@ class _NewMatchScreenState extends State<NewMatchScreen> {
                 const SizedBox(height: 20),
                 TextFormField(
                   controller: _pointsPerSetController,
-                  decoration: const InputDecoration(labelText: 'Points per Set'),
+                  decoration: const InputDecoration(labelText: 'points per set'),
                   keyboardType: TextInputType.number,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -81,7 +81,7 @@ class _NewMatchScreenState extends State<NewMatchScreen> {
                 const SizedBox(height: 20),
                 TextFormField(
                   controller: _setsToWinController,
-                  decoration: const InputDecoration(labelText: 'Sets to Win'),
+                  decoration: const InputDecoration(labelText: 'sets to win'),
                   keyboardType: TextInputType.number,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
