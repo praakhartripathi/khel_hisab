@@ -133,6 +133,24 @@ class _ScorecardScreenState extends State<ScorecardScreen> {
 
   Future<void> _showWinnerDialog(String winner) async {
     final prefs = await SharedPreferences.getInstance();
+    _match.isCompleted = true; // Mark the match as completed
+    _match.lastUpdated = DateTime.now(); // Update last updated time
+
+    // Retrieve existing match history
+    final String? matchHistoryJson = prefs.getString('match_history');
+    List<Match> matchHistory = [];
+    if (matchHistoryJson != null) {
+      final List<dynamic> jsonList = jsonDecode(matchHistoryJson);
+      matchHistory = jsonList.map((json) => Match.fromJson(json)).toList();
+    }
+
+    // Add current completed match to history
+    matchHistory.add(_match);
+
+    // Save updated history
+    await prefs.setString(
+        'match_history', jsonEncode(matchHistory.map((m) => m.toJson()).toList()));
+
     await prefs.remove('saved_match');
     return showDialog<void>(
       context: context,
@@ -141,17 +159,21 @@ class _ScorecardScreenState extends State<ScorecardScreen> {
         return AlertDialog(
           title: const Text('🏆 Match Over'),
           content: SingleChildScrollView(
-            child: ListBody(children: <Widget>[Text('$winner Won the Match!')]),
+            child: ListBody(
+              children: <Widget>[
+                Text('$winner जीत गई'),
+              ],
+            ),
           ),
           actions: <Widget>[
             TextButton(
-              child: const Text('Match Over'),
+              child: const Text('मैच समाप्त करें'),
               onPressed: () {
                 Navigator.of(context).popUntil((route) => route.isFirst);
               },
             ),
             TextButton(
-              child: const Text('New Match'),
+              child: const Text('नया मैच'),
               onPressed: () {
                 Navigator.of(context).pop();
                 Navigator.pushReplacement(
